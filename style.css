@@ -1,0 +1,150 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #B681FF;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid #B681FF;
+}
+.player-choices img:hover{
+    border-color: white;
+    cursor: pointer;
+}
+.clicked-img  {
+    border: 5px solid #7e47f5 !important;
+}
+
+/* outer-contaner */
+
+.outer-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #B681FF;
+    display: flex;
+    gap: 20px;
+    flex-flow: column nowrap;
+}
+
+/*heading-container*/
+.heading-container {
+    text-align: center;
+    background-color: #A37EF2; 
+    height: 15vh;
+}
+.heading-container  *{
+    background-color: #A37EF2;
+
+}
+
+.main-heading {
+    padding: 1.5rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+/*main-container*/
+.main-container {
+    height: 75vh;
+    margin: 0rem 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.player-column,
+.computer-column {
+    min-width: 500px;
+
+}
+
+.player-choices,
+.computer-choices {
+    display: flex;
+    gap: 1rem;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.choices {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+.player-column h2,
+.computer-column h2,
+.score-column h2 {
+    color: pink;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.score-column {
+    min-width: 225px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.scores, .result {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.scores {
+    font-size: 5rem;
+}
+.hidden{
+     visibility: hidden;    
+}
+.start-btn {
+    color: #7d4be9;
+    padding: 1rem;
+    background-color: yellow;
+    
+    border: 5px solid #B681FF;
+    border-radius: 10px;
+}
+.start-btn:hover{
+    cursor: pointer;
+    border: 5px solid white;
+}
+
+/*message container*/
+.messeage-container {
+    height: 10vh;
+    text-align: center;
+}
+
+.rules {
+    padding: 1.5rem;
+    color: white;
+}
+
+/* messeage-container */
+.messeage-container {
+    height: 15vh;
+}
+
+
+
+/*Resposive*/
+@media(max-width:1320px)and (min-width : 1024px){
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+}
+
+@media(max-width:1320px)and (min-width : 769px){
+ 
+}
